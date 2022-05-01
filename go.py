@@ -6,8 +6,8 @@ def single_input(prompt, colPos=-1, rowPos=-1):
     if colPos == -1:
         colPos = len(prompt) + 1
     if rowPos  == -1:
-        rowPos = term.state(term.TK_HEIGHT) -1
-    term.printf(1, term.state(term.TK_HEIGHT) - 1, prompt)
+        rowPos = term.state(term.TK_HEIGHT) - 1
+    term.printf(1, rowPos, prompt)
     inlineKey = ''
     key = term.read_str(colPos, rowPos, inlineKey, 1)
     return key[1]
