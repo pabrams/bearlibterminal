@@ -4,12 +4,12 @@ from bearlibterminal import terminal as term
 # TODO: don't require [enter] after single-char input
 def single_input(prompt, colPos=-1, rowPos=-1):
     if colPos == -1:
-        colPos = len(prompt) + 1
+        colPos = 1
     if rowPos  == -1:
         rowPos = term.state(term.TK_HEIGHT) - 1
-    term.printf(1, rowPos, prompt)
+    term.printf(colPos, rowPos, prompt)
     inlineKey = ''
-    key = term.read_str(colPos, rowPos, inlineKey, 1)
+    key = term.read_str(len(prompt) + colPos + 1, rowPos, inlineKey, 1)
     return key[1]
 term.open()
 term.printf(1, 1, 'Hello, world! Use q to quit.')
