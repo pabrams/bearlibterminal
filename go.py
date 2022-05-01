@@ -14,7 +14,7 @@ def single_input(prompt, colPos=-1, rowPos=-1):
 term.open()
 term.printf(1, 1, 'Hello, world! Use q to quit.')
 key = single_input('your choice: ')
-term.printf(1, 2, 'You entered: ' + key)
 if key != 'q': 
+    term.printf(1, 2, 'You entered: ' + key)
     single_input('enter to exit')
 term.close()
