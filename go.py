@@ -1,5 +1,4 @@
 from bearlibterminal import terminal as term
-
 # reads a single char beside specified prompt, which is shown at specified position
 # default position is bottom row of current term display
 # TODO: don't require [enter] after single-char input
