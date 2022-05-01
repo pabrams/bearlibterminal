@@ -16,5 +16,5 @@ term.printf(1, 1, 'Hello, world! Use q to quit.')
 key = single_input('your choice: ')
 term.printf(1, 2, 'You entered: ' + key)
 if key != 'q': 
-    single_input('hit any key to exit')
+    single_input('enter to exit')
 term.close()
