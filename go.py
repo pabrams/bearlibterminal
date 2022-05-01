@@ -1,5 +1,4 @@
 from bearlibterminal import terminal as term
-import time
 
 # reads a single char beside specified prompt, which is shown at specified position
 # default position is bottom row of current term display
