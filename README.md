@@ -1,0 +1,1 @@
+Demo of how to use i/o in bearlibterminal in python
