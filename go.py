@@ -1,6 +1,6 @@
 from bearlibterminal import terminal as term
 # reads a single char beside specified prompt, which is shown at specified position
-# default position is bottom row of current term display
+# default position is bottom row of current term display, first column
 # TODO: don't require [enter] after single-char input
 def single_input(prompt, colPos=-1, rowPos=-1):
     if colPos == -1:
