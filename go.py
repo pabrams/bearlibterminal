@@ -1,13 +1,11 @@
 from bearlibterminal import terminal as term
 
-def single_input(prompt, colPos=-1, rowPos=-1):
+def single_input(prompt, colPos=1, rowPos=-1):
     """
         Reads a single char beside specified prompt, which is shown at the specified position.
         Default position is bottom row of current term display, first column.
         TODO: Don't require [enter] after single-char input.
     """
-    if colPos == -1:
-        colPos = 1
     if rowPos  == -1:
         rowPos = term.state(term.TK_HEIGHT) - 1
     term.printf(colPos, rowPos, prompt)
