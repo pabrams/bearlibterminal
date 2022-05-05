@@ -12,8 +12,8 @@ def single_input(prompt, colPos=1, rowPos=-1):
     key = term.read()
     if key == term.TK_CLOSE:
         exit
-    else:
-        return chr(term.state(term.TK_WCHAR))
+    return chr(term.state(term.TK_WCHAR))
+
 term.open()
 term.refresh()
 term.printf(1, 1, 'Hello, world! Use q to quit.')
