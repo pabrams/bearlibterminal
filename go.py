@@ -1,8 +1,9 @@
 from bearlibterminal import terminal as term
 
-def single_input(prompt, colPos=1, rowPos=-1):
+def single_input(prompt='', colPos=1, rowPos=-1):
     """
         Reads a single char beside specified prompt, which is shown at the specified position.
+        Default prompt is empty.
         Default position is bottom row of current term display, first column.
     """
     if rowPos  == -1:
